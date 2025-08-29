@@ -24,9 +24,13 @@ env:
 
 jobs:
   integration:
-    uses: LikhithaReddy177/CI_Challange_python/
+    uses: LikhithaReddy177/CI_Challange_python/.github/workflows/python-app-integration.yml
+    permissions:
+      contents: read
+      
   build:
-
+  
+    needs: integration
     runs-on: ubuntu-latest
     permissions:
       contents: read
