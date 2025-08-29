@@ -24,7 +24,7 @@ env:
 
 jobs:
   integration:
-    uses: LikhithaReddy177/CI_Challange_python/.github/workflows/python-app-integration.yml@main
+    uses: LikhithaReddy177/CD_challange_python/.github/workflows/python-app-integration.yml@main
     permissions:
       contents: read
       
